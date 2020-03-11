@@ -1,10 +1,18 @@
 {
-    "name": "great-bay-basic",
+    "name": "exercise2_quick_notes",
     "version": "1.0.0",
-    "description": "activity for demonstrating inquirer with mysql",
-    "main": "greatBayBasic.js",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1" ,
+      "start": "node server.js"
+
+    },
+    "author": "",
+    "license": "ISC",
     "dependencies": {
-      "inquirer": "^6.2.1",
+      "express": "^4.16.3",
+      "express-handlebars": "^3.0.0",
       "mysql": "^2.16.0"
     }
   }

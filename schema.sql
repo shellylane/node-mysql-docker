@@ -1,13 +1,19 @@
-DROP DATABASE IF EXISTS greatBay_DB;
-CREATE DATABASE greatBay_DB;
+-- Drops the wishes_db if it already exists --
+DROP DATABASE IF EXISTS wishes_db;
 
-USE greatBay_DB;
+-- Create the database wishes_db and specified it for use.
+CREATE DATABASE wishes_db;
 
-CREATE TABLE auctions(
-  id INT NOT NULL AUTO_INCREMENT,
-  item_name VARCHAR(100) NOT NULL,
-  category VARCHAR(45) NOT NULL,
-  starting_bid INT default 0,
-  highest_bid INT default 0,
+USE wishes_db;
+
+-- Create the table wishes.
+CREATE TABLE wishes (
+  id int NOT NULL AUTO_INCREMENT,
+  wish varchar(255) NOT NULL,
   PRIMARY KEY (id)
 );
+
+-- Insert a set of records.
+INSERT INTO wishes (wish) VALUES ('Shaan wants to read minds.');
+INSERT INTO wishes (wish) VALUES ('John wins the lottery.');
+INSERT INTO wishes (wish) VALUES ('Kelly wishes for a room full of kittens.');
